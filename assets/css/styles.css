@@ -1,0 +1,327 @@
+/*Css File Layout -------------------------------------------*/
+
+:root {
+  --darkgray: #212329;
+  --brightred: #f9423d;
+  --white: #fff;
+  --lightred: #f9433dcc;
+  --lighblue: #4c7fd6;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+/*NAVBAR START -------------------------------------------*/
+.header {
+  background-color: white;
+  top: 0;
+  padding-bottom: 5px;
+  position: sticky;
+  z-index: 1;
+  box-shadow: #808086 0px 4px 4px -4px;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 0.2fr auto 1fr;
+  background-color: white;
+  align-items: center;
+  padding: 0 30px 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 20px;
+  height: 130px;
+}
+
+.navbar-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+#navbar-logo {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+.navbar-logo:hover {
+  opacity: 0.9;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    auto
+  ); /*alterar para 6 quando usar coaching online*/
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  justify-self: end;
+  font-weight: 200;
+  font-weight: bold;
+}
+
+.nav-links {
+  color: #212329;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: var(--lightred);
+  transition: all 0.2s ease-out;
+}
+
+.nav-links-btn {
+  background-color: var(--brightred);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: solid 1px var(--white);
+}
+
+.nav-links-btn:hover {
+  background-color: transparent;
+  color: var(--darkgray);
+  padding: 6px 16px;
+  border: solid 1px var(--brightred);
+  transition: all 0.3s ease-out;
+}
+
+.nav-links--selected {
+  color: var(--brightred);
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.nav-links--selected:hover {
+  color: var(--darkgray);
+  transition: all 0.2s ease-out;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: var(--darkgray);
+}
+/*NAVBAR END -------------------------------------------*/
+
+/*FOOTER START -------------------------------------------*/
+.footer {
+  background-color: black;
+  color: var(--white);
+}
+
+.footer h4 {
+  padding: 30px 0 15px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.footer li {
+  padding: 15px;
+}
+
+.contacts {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.email {
+  text-decoration: none;
+  color: var(--white);
+}
+
+#youtube-logo {
+  width: 50px;
+  height: auto;
+  filter: invert();
+}
+
+#insta-logo {
+  position: relative;
+  top: 4px;
+  width: 40px;
+  height: auto;
+  filter: invert();
+}
+
+#email-logo {
+  position: relative;
+  top: -8px;
+  height: 65px;
+  filter: invert();
+}
+
+.aside {
+  padding: 10px 0 50px;
+  background-color: black;
+  color: var(--white);
+  text-align: center;
+}
+/*FOOTER END -------------------------------------------*/
+
+/*MEDIA QUERYS START*/
+@media screen and (max-width: 1000px) {
+  .navbar {
+    font-size: 19px;
+    height: 120px;
+  }
+
+  #navbar-logo {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    font-size: 17px;
+    font-weight: lighter;
+    height: 110px;
+  }
+
+  #navbar-logo {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header {
+    padding: 0;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: var(--brightred);
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+
+  #navbar-logo {
+    width: 120px;
+    top: 0;
+  }
+
+  .nav-menu.active {
+    background-color: var(--darkgray);
+    top: 100px;
+    left: 0;
+    opacity: 0.9; /*aqui--------*/
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    text-align: center;
+    line-height: 30px;
+    width: 100%;
+    display: table;
+    color: var(--white);
+  }
+
+  .nav-links:hover {
+    background-color: var(--brightred);
+    color: var(--white);
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100px;
+  }
+
+  .nav-links-btn {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--darkgray);
+    color: var(--white);
+    transition: all 0.4s ease-out;
+  }
+
+  .nav-links-btn:hover {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--brightred);
+    color: var(--white);
+    transition: all 0.4s ease-out;
+  }
+
+  .nav-links--selected {
+    line-height: 30px;
+    color: var(--brightred);
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+  }
+
+  .nav-links--selected:hover {
+    color: var(--white);
+    transition: all 0.2s ease-out;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 35%;
+    right: 9%;
+    transform: translate(5%, 20%);
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #mobile-menu {
+    right: 13%;
+  }
+
+  #youtube-logo {
+    width: 40px;
+  }
+
+  #insta-logo {
+    width: 30px;
+  }
+
+  #email-logo {
+    height: 55px;
+  }
+
+  .aside {
+    font-size: 15px;
+  }
+}
+
+/*MEDIA QUERYS END -------------------------------------------*/

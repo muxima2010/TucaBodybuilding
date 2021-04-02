@@ -1,0 +1,148 @@
+/*Css File Nutrition*/
+
+:root {
+  --darkgray: #212329;
+  --brightred: #f9423d;
+  --white: #fff;
+  --lightred: #f9433dcc;
+  --lighblue: #4c7fd6;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.main {
+  display: block;
+  max-width: 1240px;
+  margin: 0 auto;
+  color: var(--darkgray);
+}
+
+.section {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 40px 40px 100px;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 30px;
+  padding: 50px 0 15px;
+  font-weight: bold;
+}
+
+.section hr {
+  color: var(--darkgray);
+}
+
+.section h2 {
+  font-size: 20px;
+  padding: 50px 0 40px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+}
+
+.wrapper .image {
+  width: 50%;
+  height: auto;
+  align-self: center;
+  padding: 10px;
+}
+
+.wrapper .frase {
+  font-size: 17px;
+  width: 50%;
+  align-self: center;
+  padding: 15px 15px 15px 30px;
+}
+
+.wrapper .frase-supplement {
+  font-size: 17px;
+  width: 50%;
+  align-self: center;
+  padding: 15px 30px 15px 15px;
+}
+
+.section p {
+  font-size: 17px;
+  text-align: justify;
+  padding: 10px 0;
+}
+
+#picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.section h3 {
+  font-size: 20px;
+  padding: 60px 0 0;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--darkgray);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--brightred);
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 560px) {
+  .section {
+    padding: 20px 40px 50px;
+  }
+
+  .section h1 {
+    font-size: 19px;
+    padding: 30px 0 15px;
+    font-weight: bold;
+  }
+
+  .wrapper {
+    display: block;
+    margin: 0 auto;
+    padding: 35px 0 0;
+  }
+
+  .wrapper .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .wrapper .frase {
+    width: 100%;
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+
+  .wrapper .frase-supplement {
+    width: 100%;
+    padding: 0 0 40px;
+    text-align: center;
+  }
+
+  p {
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+
+  .description {
+    padding: 20px 0;
+    text-align: justify;
+  }
+}
