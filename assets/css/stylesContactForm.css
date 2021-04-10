@@ -1,29 +1,7 @@
 /*Css File Contact Form*/
-:root {
-  --darkgray: #212329;
-  --brightred: #f9423d;
-  --white: #fff;
-  --lightred: #f9433dcc;
-  --lighblue: #4c7fd6;
-}
-
-body {
-  background-color: #f1f1f1;
-}
-
-.main {
-  display: block;
-  max-width: 1240px;
-  margin: 0 auto;
-  color: var(--darkgray);
-}
 
 .contactform {
-  display: block;
-  margin: 0 auto;
-  max-width: 90%;
   padding: 40px 0 125px;
-  text-align: center;
 }
 
 .contactform h1 {
@@ -59,7 +37,7 @@ textarea:focus {
 }
 
 button {
-  background-color: #4c7fd6;
+  background-color: var(--lightblue);
   color: var(--white);
   padding: 5px;
   font-size: 17px;

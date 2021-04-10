@@ -1,43 +1,20 @@
-/*Css File Trainning*/
+/*Css File Training*/
 
-:root {
-  --darkgray: #212329;
-  --brightred: #f9423d;
-  --white: #fff;
-  --lightred: #f9433dcc;
-  --lighblue: #4c7fd6;
-}
-
-body {
-  background-color: #f1f1f1;
-}
-
-.main {
-  display: block;
-  max-width: 1240px;
-  margin: 0 auto;
-  color: var(--darkgray);
-}
-
-.trainning {
-  display: block;
-  margin: 0 auto;
-  max-width: 90%;
+.training {
   padding: 40px 40px 125px;
-  text-align: center;
 }
 
-.trainning h1 {
+.training h1 {
   font-size: 30px;
   padding: 50px 0 15px;
   font-weight: bold;
 }
 
-.trainning hr {
+.training hr {
   color: var(--darkgray);
 }
 
-.trainning h2 {
+.training h2 {
   font-size: 20px;
   padding: 50px 0 40px;
 }
@@ -62,7 +39,7 @@ body {
   padding: 15px 15px 15px 30px;
 }
 
-.trainning p {
+.training p {
   font-size: 17px;
   text-align: justify;
   padding: 10px 0;
@@ -76,18 +53,18 @@ body {
   margin: 0 auto;
 }
 
-.trainning h3 {
+.training h3 {
   font-size: 20px;
   padding: 60px 0 0;
   font-weight: bold;
 }
 
 @media screen and (max-width: 560px) {
-  .trainning {
+  .training {
     padding: 20px 40px 50px;
   }
 
-  .trainning h1 {
+  .training h1 {
     font-size: 19px;
     padding: 30px 0 15px;
     font-weight: bold;

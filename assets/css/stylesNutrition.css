@@ -1,30 +1,7 @@
 /*Css File Nutrition*/
 
-:root {
-  --darkgray: #212329;
-  --brightred: #f9423d;
-  --white: #fff;
-  --lightred: #f9433dcc;
-  --lighblue: #4c7fd6;
-}
-
-body {
-  background-color: #f1f1f1;
-}
-
-.main {
-  display: block;
-  max-width: 1240px;
-  margin: 0 auto;
-  color: var(--darkgray);
-}
-
 .section {
-  display: block;
-  margin: 0 auto;
-  max-width: 90%;
   padding: 40px 40px 100px;
-  text-align: center;
 }
 
 .section h1 {
