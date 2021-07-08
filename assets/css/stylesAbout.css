@@ -1,30 +1,7 @@
 /*Css File About*/
 
-:root {
-  --darkgray: #212329;
-  --brightred: #f9423d;
-  --white: #fff;
-  --lightred: #f9433dcc;
-  --lighblue: #4c7fd6;
-}
-
-body {
-  background-color: #f1f1f1;
-}
-
-.main {
-  display: block;
-  max-width: 1240px;
-  margin: 0 auto;
-  color: var(--darkgray);
-}
-
 .about {
-  display: block;
-  margin: 0 auto;
-  max-width: 90%;
   padding: 40px 40px 125px;
-  text-align: center;
 }
 
 .about h1 {
@@ -75,9 +52,6 @@ body {
   font-size: 17px;
 }
 
-@media screen and (max-width: 1000px) {
-}
-
 @media screen and (max-width: 900px) {
   .wrapper .frase {
     padding: 0 85px 0 0;
@@ -126,7 +100,4 @@ body {
     padding: 20px 0;
     text-align: justify;
   }
-}
-
-@media screen and (max-width: 320px) {
 }
